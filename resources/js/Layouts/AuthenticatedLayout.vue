@@ -46,12 +46,12 @@ const showingNavigationDropdown = ref(false)
                     <span class="inline-flex rounded-md">
                       <button
                         type="button"
-                        class="inline-flex items-center rounded-md border border-transparent bg-white px-3 py-2 text-sm font-medium leading-4 text-gray-500 transition duration-150 ease-in-out hover:text-gray-700 focus:outline-none"
+                        class="inline-flex items-center rounded-md border border-transparent bg-white py-2 px-3 text-sm font-medium leading-4 text-gray-500 transition duration-150 ease-in-out hover:text-gray-700 focus:outline-none"
                       >
                         {{ $page.props.auth.user.name }}
 
                         <svg
-                          class="-me-0.5 ms-2 h-4 w-4"
+                          class="ms-2 -me-0.5 h-4 w-4"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 20 20"
                           fill="currentColor"
@@ -128,7 +128,7 @@ const showingNavigationDropdown = ref(false)
           }"
           class="sm:hidden"
         >
-          <div class="space-y-1 pb-3 pt-2">
+          <div class="space-y-1 pt-2 pb-3">
             <ResponsiveNavLink
               :href="route('dashboard')"
               :active="route().current('dashboard')"
@@ -138,7 +138,7 @@ const showingNavigationDropdown = ref(false)
           </div>
 
           <!-- Responsive Settings Options -->
-          <div class="border-t border-gray-200 pb-1 pt-4">
+          <div class="border-t border-gray-200 pt-4 pb-1">
             <div class="px-4">
               <div class="text-base font-medium text-gray-800">
                 {{ $page.props.auth.user.name }}
@@ -166,7 +166,7 @@ const showingNavigationDropdown = ref(false)
 
       <!-- Page Heading -->
       <header class="bg-white shadow" v-if="$slots.header">
-        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
           <slot name="header" />
         </div>
       </header>
