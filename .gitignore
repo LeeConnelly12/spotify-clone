@@ -18,3 +18,8 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+
+/config/caddy
+/data/caddy
+frankenphp
+frankenphp-worker.php
